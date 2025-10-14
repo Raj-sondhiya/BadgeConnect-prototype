@@ -9,7 +9,7 @@
     <!-- ✅ Bootstrap 5 CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Font awsone icon cdn -->
+    <!-- Font awesome icon cdn -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 
     <!-- ✅ Custom CSS -->
@@ -22,22 +22,23 @@
         <div class="mb-3">
             <div class="mx-auto rounded-circle d-flex align-items-center justify-content-center bg-info"
                 style="width: 80px; height: 80px;">
-                <div><i class="fa fa-certificate" style="    font-size: 50px;
-    color: white;" aria-hidden="true"></i></div>
+                <div><i class="fa fa-certificate" style="font-size: 50px; color: white;" aria-hidden="true"></i></div>
             </div>
         </div>
 
-        <h4 class="fw-bold mb-1">Welcome to BadgeConnect</h4>
-        <h6 id="form-subtitle" class="fw-semibold mb-3">admin login panel</h6>
+        <h4 class="fw-bold mb-1">Welcome to BadgeConnect admin login panel</h4>
+        <!-- <-- added this element so script won't error when updating subtitle -->
+        <p id="form-subtitle" class="text-muted small mb-2">Sign in to continue</p>
         <p id="form-desc" class="text-muted mb-4">Please enter your login credentials</p>
 
         <!-- Login Form -->
         <form id="loginForm">
             <div class="mb-3 text-start">
-                <label for="email" class="form-label fw-semibold">Email address</label>
+                <label for="email" class="form-label fw-semibold mb-2">Email address</label>
                 <input type="email" class="form-control" id="email" placeholder="Enter your email..." required>
             </div>
-            <button type="submit" id="sendOtpBtn" class="btn btn-info w-100 text-white fw-semibold">Send OTP</button>
+            <button type="submit" id="sendOtpBtn" class="btn btn-info w-100 text-white fw-semibold mt-3">Send
+                OTP</button>
         </form>
 
         <!-- OTP Verification Form (Initially Hidden) -->
